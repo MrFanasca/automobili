@@ -23,6 +23,10 @@ public class automobili {
 		System.out.println("Carburante: " + carburante + " l");
 		System.out.println("Consumo medio: " + consumoMedio + "km/l");
 		System.out.println("Chilometri percorsi: " + kmPercorsi + "km");
+		for(int i=0; i<kmPercorsi/10;i++)
+			System.out.print("-");
+		System.out.println();
+		
 	}
 	
 	public void aggiorna ()								// simula il passaggio di 1h
