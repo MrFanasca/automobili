@@ -32,7 +32,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		// dichiaro gli oggetti della classe automobili
-		// ogni volta che si scrive "nerw automobili (.....)" si 
+		// ogni volta che si scrive "nerw automobili (.....)" si esegue il metodo costruttore
 		automobili auto1 = new automobili(30, 20);
 		automobili auto2 = new automobili(50, 23);
 		automobili autoCorrente;									

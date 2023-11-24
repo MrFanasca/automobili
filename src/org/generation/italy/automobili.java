@@ -15,7 +15,13 @@ public class automobili {
 	 
 	// le variabili (float consumoMedio, float carburante) indicate nel costruttore vengono chiamate "parametri"
 	// e rappresenteno i valori che ci vengono forniti da chi "crea" l'oggetto
-	public automobili(float consumoMedio, float carburante)
+	// normalmente i parametri del costruttore hanno lo stesso nome degli attributi. Per capire a quale delle
+	// due variabili ci si riferisce, si usa la parola chiave "this", ad esempio:
+	// 	"this.carburante" 	indica l'attributo della classe
+	// 	"carburante" 		indica il parametro
+	// la parola "this" è obbligatoria solo se c'è ambiguità (variabili con lo stesso nome).
+	// se i parametri hanno un nome diverso (anche se non è la prassi), il "this" non è necessario
+	public automobili(float carburante, float consumoMedio)
 	{
 		if (carburante<0)
 		{
@@ -23,7 +29,7 @@ public class automobili {
 			carburante=0;										// valore di default
 		}
 		else
-			this.carburante =carburante;	// this.carburante è l'attributo; carburante è il parametro
+			this.carburante =carburante;	
 		
 		if (consumoMedio<=0)
 		{
@@ -31,7 +37,7 @@ public class automobili {
 			consumoMedio=0;										// valore di default
 		}
 		else
-			this.consumoMedio =consumoMedio;	// this.consumoMedio è l'attributo; consumoMedio è il parametro
+			this.consumoMedio =consumoMedio;	
 		velocità=0;
 		kmPercorsi=0;
 	}
