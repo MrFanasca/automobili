@@ -31,12 +31,15 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		automobili auto1 = new automobili();
-		automobili auto2 = new automobili();
+		// dichiaro gli oggetti della classe automobili
+		// ogni volta che si scrive "nerw automobili (.....)" si 
+		automobili auto1 = new automobili(30, 20);
+		automobili auto2 = new automobili(50, 23);
 		automobili autoCorrente;									
 		String risposta;
 		
-		// Dati relativi all'automobile 1
+		/* non lo posso più fare perché gli attributi sono "private" 
+		//Dati relativi all'automobile 1
 		auto1.velocità = 0;
 		auto1.carburante = 30;
 		auto1.consumoMedio = 20;
@@ -46,7 +49,7 @@ public class Main {
 		auto2.velocità = 0;
 		auto2.carburante = 50;
 		auto2.consumoMedio = 23;
-		auto2.kmPercorsi= 0;
+		auto2.kmPercorsi= 0;*/
 		
 		do
 		{
